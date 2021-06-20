@@ -1,0 +1,17 @@
+<h2 class="bg-light mb-2">Update Product</h2>
+<form (submit)="updateCategory(updateCatForm)" #updateCatForm="ngForm" >
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Category Name</label>
+      <input type="text" class="form-control" required name="category_name"  [(ngModel)]="dataC.name"  ngModel>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Description</label>
+      <textarea type="text" class="form-control" [(ngModel)]="dataC.description" placeholder="Enter category Description" required name="cat_description" ngModel >
+        </textarea>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Update Category</button>
+</form>

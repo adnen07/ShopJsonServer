@@ -1,0 +1,29 @@
+<section class="cart_section">
+  <div class="container" >
+    <h2>Category Manage</h2>
+    <button type="button" class="btn btn-primary" (click)="goToCreate()">
+      <i class="fa fa-plus"></i>
+    </button>
+    <table>
+      <tr>
+        <th>Category Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let cat of listCat | paginate:{itemsPerPage:5,
+        currentPage:page,
+        totalItems:totalLength}">
+        <td>{{cat.name}}</td>
+        <td>{{cat.description}}</td>
+        
+        <td><button type="button" class="btn btn-success" (click)="goToUpdate(cat.id)" >
+          <i class="fa fa-edit"></i>
+        </button>
+        <button type="button" class="btn btn-danger" (click)="goToDelete(cat.id)">
+          <i class="fa fa-remove"></i>
+        </button></td>
+      </tr>
+    </table>
+  </div>
+</section>
+<pagination-controls (pageChange)="page= $event"></pagination-controls>

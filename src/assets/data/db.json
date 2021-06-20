@@ -1,0 +1,303 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "PC PORTABLE LENOVO",
+      "category_id": "1",
+      "qnt": 1,
+      "description": "Ecran 15.6\" HD - Processeur: AMD 3020e  Mémoire RAM: 4 Go DDR4 - Disque Dur: 1 To - Carte Graphique: Intel HD Graphics ",
+      "image_path": "https://media.mytek.tn/media/catalog/product/cache/0dd0561c7b0cf141e19b8655ffdc7055/l/e/lenvos.jpg",
+      "prise": 560,
+      "rating": 3,
+      "reviews": 200,
+      "vendor_name": "seller 1",
+      "warranty": 4
+    },
+    {
+      "id": 5,
+      "name": "PC PORTABLE DELL",
+      "category_id": "1",
+      "qnt": 1,
+      "description": "Ecran 15.6\" HD - Processeur: Intel Celeron N4205 -- Mémoire RAM: 4 Go DDR4 - Disque dur: 500 Go - Carte graphique: Intel",
+      "image_path": "https://media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/d/e/dell8go2_1.jpg",
+      "prise": 360,
+      "rating": 4,
+      "reviews": 200,
+      "vendor_name": "seller 1",
+      "warranty": 4
+    },
+    {
+      "id": 293,
+      "name": "PC PORTABLE ASUS CELERON",
+      "category_id": "1",
+      "qnt": 1,
+      "description": "Ecran 15.6\" HD - Processeur: Intel Celeron N4000 Mémoire RAM: 4Go - Disque Dur: 1 To - Carte Graphique: Intel HD Graphics",
+      "image_path": "/assets/images/3.jpg",
+      "prise": "600",
+      "rating": "4",
+      "reviews": "4",
+      "warranty": "2 ans"
+    },
+    {
+      "id": 1363,
+      "name": "PC PORTABLE LENOVO IDEAPAD",
+      "category_id": "1",
+      "qnt": 1,
+      "description": "Ecran 15.6\" HD - Processeur: Intel Core i5-1035G1 (1,00 GHz up to 3,60 GHz, 6 Mo de mémoire cache, Quad-Core)",
+      "image_path": "/assets/images/offerte_2.jpg",
+      "prise": "1250",
+      "rating": "3",
+      "reviews": "4",
+      "warranty": "1 ans"
+    },
+    {
+      "id": 7405,
+      "name": "zz",
+      "category_id": "2",
+      "description": "aa",
+      "image_path": "/assets/images/as.jpg",
+      "prise": "142",
+      "rating": "3",
+      "reviews": "3",
+      "warranty": "1 ans"
+    },
+    {
+      "id": 8410,
+      "name": "ccc",
+      "category_id": "3",
+      "description": "ccc",
+      "image_path": "/assets/images/lenvos.jpg",
+      "prise": "125",
+      "rating": "5",
+      "reviews": "2",
+      "warranty": "ccc"
+    },
+    {
+      "id": 172,
+      "name": "test",
+      "category_id": 1,
+      "description": "test",
+      "image_path": "/assets/images/as.jpg",
+      "prise": "5892",
+      "rating": "4",
+      "reviews": "3",
+      "warranty": "2"
+    },
+    {
+      "id": 2312,
+      "name": "tes3",
+      "category_id": "3",
+      "qnt": 1,
+      "description": "test test",
+      "image_path": "/assets/images/slider 2.jpg",
+      "prise": "100",
+      "rating": "3",
+      "reviews": "4",
+      "warranty": "2"
+    },
+    {
+      "id": 4772,
+      "name": "Fekher",
+      "category_id": 1,
+      "qnt": 1,
+      "description": "fdtdhkskgsfydkd",
+      "image_path": "/assets/images/user.jpg",
+      "prise": "2523",
+      "rating": "5",
+      "reviews": "3",
+      "warranty": "sdkhsuvhsiduvh"
+    },
+    {
+      "id": 2589,
+      "name": "oidoifjfdoij",
+      "category_id": "3",
+      "qnt": 1,
+      "description": "euufkheriuh",
+      "image_path": "/assets/images/slider 3.jpg",
+      "prise": "100",
+      "rating": "4",
+      "reviews": "5",
+      "warranty": "2"
+    },
+    {
+      "id": 9706,
+      "name": "adnen",
+      "category_id": "6",
+      "qnt": 1,
+      "description": "test de produit",
+      "image_path": "/assets/images/offerte_2.jpg",
+      "prise": "1000",
+      "rating": "3",
+      "reviews": "4",
+      "warranty": "1"
+    },
+    {
+      "id": 6716,
+      "name": "PC Portable test",
+      "category_id": 1,
+      "qnt": 1,
+      "description": "test testtest testtest testtest testtest testtest testtest testtest test",
+      "image_path": "/assets/images/slider 1.jpg",
+      "prise": "5600",
+      "rating": "4",
+      "reviews": "3",
+      "warranty": "2"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Informatiques",
+      "description": "description for categorys"
+    },
+    {
+      "id": 2,
+      "name": "Gamer",
+      "description": "description for category"
+    },
+    {
+      "id": 3,
+      "name": "Impression",
+      "description": "description for category"
+    },
+    {
+      "name": "aa",
+      "description": "aa",
+      "id": 4
+    },
+    {
+      "name": "aaa",
+      "description": "aaaa",
+      "id": 5
+    },
+    {
+      "name": "aaaa",
+      "description": "aaaaa",
+      "id": 6
+    },
+    {
+      "name": "aaaaaa",
+      "description": "aaaaaaaaa",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "pseudo": "adnen",
+      "email": "adnen@user.com",
+      "password": "adnen123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "pseudo": "Adnen_Ettayeb",
+      "email": "adnenettayeb@gmail.com",
+      "password": "password1234",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "pseudo": "admin",
+      "email": "admin@admin.com",
+      "password": "adnen123",
+      "role": "admin"
+    }
+  ],
+  "checkout": [
+    {
+      "refOrder": "rua1hs79d",
+      "id_product_c": 4,
+      "quantity_c": 1,
+      "price_t": 1280,
+      "id": 1
+    },
+    {
+      "refOrder": "rua1hs79d",
+      "id_product_c": 5,
+      "quantity_c": 2,
+      "price_t": 1280,
+      "id": 2
+    },
+    {
+      "refOrder": "kg22axk9k",
+      "id_product_c": 4,
+      "quantity_c": 1,
+      "price_t": 560,
+      "id": 3
+    },
+    {
+      "refOrder": "sf1nfxc45",
+      "id_product_c": 4,
+      "quantity_c": 1,
+      "price_t": 560,
+      "id": 4
+    },
+    {
+      "refOrder": "src9b5qz3",
+      "id_product_c": 5,
+      "quantity_c": 5,
+      "price_t": 1800,
+      "id": 5
+    },
+    {
+      "refOrder": "p1p0njac6",
+      "id_product_c": 4,
+      "quantity_c": 5,
+      "price_t": 2800,
+      "id": 6
+    }
+  ],
+  "orders": [
+    {
+      "id": 2621,
+      "order_ref": "rua1hs79d",
+      "order_date": "2021-06-10",
+      "firstname": "adnen",
+      "lastname": "ettayeb",
+      "phone": "90118948",
+      "address": "rue annaba cité riadh kelibia",
+      "price_total": 1280
+    },
+    {
+      "id": 3561,
+      "order_ref": "kg22axk9k",
+      "order_date": "2021-06-10",
+      "firstname": "aa",
+      "lastname": "aa",
+      "phone": "1452",
+      "address": "aa",
+      "price_total": 560
+    },
+    {
+      "id": 986,
+      "order_ref": "sf1nfxc45",
+      "order_date": "2021-06-12",
+      "firstname": "adnen",
+      "lastname": "ettayeb",
+      "phone": "1478523",
+      "address": "aaa",
+      "price_total": 560
+    },
+    {
+      "id": 6728,
+      "order_ref": "src9b5qz3",
+      "order_date": "2021-06-12",
+      "firstname": "duyegfu",
+      "lastname": "uecgeucg",
+      "phone": "23654987",
+      "address": "ydgcdusycg",
+      "price_total": 1800
+    },
+    {
+      "id": 453,
+      "order_ref": "p1p0njac6",
+      "order_date": "2021-06-12",
+      "firstname": "ziw",
+      "lastname": "uecgeucg",
+      "phone": "55666888",
+      "address": "ziw",
+      "price_total": 2800
+    }
+  ]
+}

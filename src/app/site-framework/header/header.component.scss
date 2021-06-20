@@ -1,0 +1,77 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.user {
+  font-size: 14px;
+}
+mat-toolbar {
+  background: #f7f7f7;
+}
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  &-icon {
+    height: 18px;
+    font-size: 16px;
+  }
+}
+
+::ng-deep {
+  .mat-menu-content {
+    width: 160px;
+  }
+}
+
+header{
+  background: rgb(94, 0, 0);
+  padding: 20px 0;
+}
+header h4{
+  color: #fff;
+  cursor: pointer;
+}
+header h4:focus{
+  outline: none;
+  border: none;
+}
+.cart_icon{
+  position: relative;
+  cursor: pointer;
+}
+.cart_icon:focus{
+  outline: none;
+  border: none;
+}
+.cart_icon i{
+  font-size: 24px;
+  color: #fff;
+}
+.cart_value{
+  position: absolute;
+  top: -17px;
+  right: -25px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 7px;
+}
+.fa-shopping-cart:before{
+  color: darkorange;
+}
+

@@ -1,0 +1,90 @@
+<div>
+<mat-icon  id="close-icon" (click)="closeForm()" >close
+</mat-icon>
+</div>
+<form [formGroup]="orderForm" class="form-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Order Information</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="full-width">
+            <input formControlName="firstName" matInput placeholder="First name">
+            <mat-hint style="color: #b00000" *ngIf="orderForm.get('firstName').touched && orderForm.get('firstName').errors?.required">
+            firstName is required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="full-width">
+            <input  formControlName="lastName" matInput placeholder="Last name">
+            <mat-hint style="color: #b00000" *ngIf="orderForm.get('lastName').touched && orderForm.get('lastName').errors?.required">
+              lastName is required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <mat-form-field class="full-width">
+            <textarea  formControlName="address" matInput placeholder="Address"></textarea>
+            <mat-hint style="color: #b00000" *ngIf="orderForm.get('address').touched && orderForm.get('address').errors?.required">
+              address is required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+
+
+        <div class="col-sm-6">
+          <mat-form-field class="full-width">
+            <textarea  formControlName="mobile" matInput placeholder="Phone"></textarea>
+            <mat-hint style="color: #b00000" *ngIf="orderForm.get('mobile').touched && orderForm.get('mobile').errors?.required">
+              number phone is required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="saveForm()" mat-raised-button color="primary">Save</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <section class="cart_section">
+    <div class="container">
+      <h2>Ref Order {{refOrder}}</h2>
+      <div *ngIf="getCartDetails">
+        <table>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+          </tr>
+          <tr *ngFor="let getCartDetail
+of getCartDetails">
+
+            <td>{{getCartDetail.name_p}}</td>
+
+            <td>{{getCartDetail.qnt}}</td>
+            <td>
+              $ {{getCartDetail.qnt
+            * getCartDetail.prise_p | number}}
+            </td>
+          </tr>
+        </table>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Total - $ {{total}}
+
+            </h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</form>

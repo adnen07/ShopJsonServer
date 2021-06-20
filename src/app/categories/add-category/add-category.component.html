@@ -1,0 +1,21 @@
+<div class="container">
+<h2 class="bg-light mb-2">Add New Category</h2>
+<form (submit)="addNewCategory(addCatForm)" #addCatForm="ngForm" >
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >category Name</label>
+      <input type="text" class="form-control" value="Enter Category Name" required  name="cat_name" ngModel>
+
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Description</label>
+      <textarea type="text" class="form-control" placeholder="Enter category Description" required name="cat_description" ngModel >
+        </textarea>
+    </div>
+
+  </div>
+  <button class="btn btn-primary" type="submit">Create Category</button>
+</form>
+</div>

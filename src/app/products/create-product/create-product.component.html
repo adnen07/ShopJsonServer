@@ -1,0 +1,68 @@
+<h2 class="bg-light mb-2">Add New Product</h2>
+<form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm" >
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >Product Name</label>
+      <input type="text" class="form-control" value="Enter Product Name" required  name="product_name" ngModel>
+
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Category  </label>
+      <br>
+      <select [(ngModel)]="id_cat_selected" name="id_cat_selected" ngModel >
+        <option  *ngFor="let i of catList" [value]="i.id" >
+          {{i.name}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Description</label>
+      <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="product_description" ngModel >
+        </textarea>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label>Rating</label>
+      <select class="custom-select" required name="product_rating" ngModel>
+        <option selected value="">Choose...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Product Warranty</label>
+      <input type="text" class="form-control" value="Enter Product warranty" required name="product_warranty" ngModel>
+    </div>
+
+
+    <div class="col-md-6 mb-3">
+      <label >Choose Image</label>
+      <input type="file" class="form-control-file" id="file" (change)="addImage($event)" >
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="">Product Price</label>
+      <input type="text" class="form-control" value="Enter Product Name" required name="product_price" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="">Reviews</label>
+      <select class="custom-select" required name="product_reviews" ngModel>
+        <option selected value="">Choose...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Create Product</button>
+</form>

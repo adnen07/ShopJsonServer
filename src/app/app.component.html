@@ -1,0 +1,48 @@
+<mat-drawer-container *ngIf="role_user=='admin'">
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-side-bar-admin></app-side-bar-admin>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header-admin (toggleSidebarForMe)="sideBarTogller()"></app-header-admin>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+
+<div *ngIf="(role_user=='user')  ">
+<app-header></app-header>
+<br>
+<br>
+<br>
+<div class="container" >
+<div class="row">
+  <div class="col-lg-3">
+
+    <app-sidebar></app-sidebar>
+  </div>
+  <!-- /.col-lg-3 !-->
+  <div class="col-lg-9">
+<router-outlet></router-outlet>
+  </div>
+  <!-- /.col-lg-9 !-->
+
+</div>
+  <!-- /.row !-->
+</div>
+<!-- /.container !-->
+<br>
+<app-footer></app-footer>
+</div>
+
+
+<div>
+  <div class="container" >
+    <div class="row">
+      <!-- /.col-lg-3 !-->
+      <div class="col-lg-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/images/icon_login.png" id="icon" alt="User Icon" style="height: 100px;height: 200px" />
+    </div>
+
+    <!-- Login Form -->
+    <form   (submit)="loginProcess(login)" #login="ngForm">
+      <input  type="text"  class="fadeIn second input-group"   name="email_user" ngModel placeholder="login"   >
+      <br>
+      <input type="text" id="password" class="fadeIn second input-group" name="password_user" ngModel placeholder="password" >
+      <button type="submit" class="btn btn-primary" value="Log In">Login</button>
+    </form>
+
+
+
+  </div>
+</div>

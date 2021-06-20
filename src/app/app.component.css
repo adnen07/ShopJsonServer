@@ -1,0 +1,22 @@
+.nav-link{
+  color: #fff!important;
+}
+.navbar-brand{
+  color: #ddd!important;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 260px;
+}
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer {
+  background: #0f172a;
+}

@@ -1,0 +1,34 @@
+<section class="cart_section">
+  <div class="container" >
+    <h2>Product Manage</h2>
+    <button type="button" class="btn btn-primary" (click)="goToCreate()">
+            <i class="fa fa-plus"></i>
+          </button>
+
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th >Action</th>
+        </tr>
+        <tr *ngFor="let prod of productList | paginate:{itemsPerPage:5,
+        currentPage:page,
+        totalItems:totalLength}">
+          <td>{{prod.name}}</td>
+          <td>{{prod.description}}</td>
+          <td ><img src="{{prod.image_path}}" alt="P1" style="height: 120px"></td>
+          <td>{{prod.prise}} $</td>
+          
+          <td style="width: 150px;"> <button type="button" class="btn btn-success" (click)="goToUpdate(prod.id)" >
+            <i class="fa fa-edit"></i>      
+          </button>      
+          <button type="button" class="btn btn-danger" (click)="goToDelete(prod.id)">
+            <i class="fa fa-remove"></i>
+          </button></td>
+        </tr>
+      </table>
+    </div>
+</section>
+<pagination-controls (pageChange)="page= $event"></pagination-controls>

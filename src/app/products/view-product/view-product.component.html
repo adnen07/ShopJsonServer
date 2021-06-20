@@ -1,0 +1,35 @@
+<div class="card mt-4 mb-4" >
+
+    <img class="card-img-top img-fluid"  [src]="productList.image_path_p" alt="" style="height: 500px ;width:400px">
+    <div class="card-body">
+      <h3 class="card-title">{{productList.name_p}}</h3>
+      <!--<a href="products/create-product/" class="btn btn-primary">Create Product</a>-->
+
+      <!--<a href="products/update-product/{{productList.id_p}}" class="btn btn-success">Update Product</a>-->
+
+      <!--<button class="btn btn-danger" (click)="deleteProd(id)" > Delete</button>-->
+
+      <h4>{{productList.prise_p}}$</h4>
+    <p class="card-text">{{productList.description_p}}</p>
+    <span class="text-warning">{{productList.rating_p}}</span>
+     stars
+  </div>
+  <div>
+    <div class="container" style="text-align: center">
+      <button type="button"
+              class="btn"
+              (click)="inc(productList)">
+        <i class="fa fa-plus"></i>
+      </button>
+      <span>{{productList.qnt}}</span>
+      <button type="button"
+              class="btn"
+              (click)="dec(productList)">
+        <i class="fa fa-minus"></i>
+      </button>
+      <button type="button" class="btn btn-sm btn-outline-primary product-btn" (click)="addToCart(productList)">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+  <!-- ./card! -->
+

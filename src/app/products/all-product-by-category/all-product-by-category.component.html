@@ -1,0 +1,18 @@
+<h2> Search By Category </h2>
+<div class="row" >
+  <div class="col-lg-4 col-md-6 mb-4 " *ngFor="let items of productList">
+    <div class="card h-100">
+      <a href="#" ><img class="card-img-top" [src]="items.image_path" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="products/view-product/{{items.id}}" >{{items.name}}</a>
+        </h4>
+        <h5>{{items.prise}}$</h5>
+        <p class="card-text"> {{items.description}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{items.rating}} Stars</small>
+      </div>
+    </div>
+  </div>
+</div>
